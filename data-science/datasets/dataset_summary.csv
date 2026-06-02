@@ -1,0 +1,21 @@
+metric,value
+project_name,FRESHLY — Fruit & Vegetable Ripeness Detection
+dataset_version,v1.0
+created_at,2026-05-24
+total_images,19819
+total_classes,18
+total_items,6
+categories,"fruit, vegetable"
+conditions,"ripe, rotten, unripe"
+train_images,16384
+val_images,1717
+test_images,1718
+augmented_images,2652
+original_images,17167
+split_method,Stratified train/validation/test split
+augmentation_methods,"Flip, rotation, brightness adjustment, zoom"
+duplicate_removal,MD5 hash-based duplicate detection
+quality_filter,Blur/distortion filtering using edge statistics
+recommended_image_size,224×224
+total_features,12
+feature_extraction,RGB/HSV statistical features + Local Binary Pattern texture
