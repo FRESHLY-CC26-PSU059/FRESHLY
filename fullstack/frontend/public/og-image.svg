@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#022f1b"/>
+      <stop offset="60%" stop-color="#0c5132"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="180" cy="120" r="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4ade80" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0c5132" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Logo mark -->
+  <g transform="translate(100,110)">
+    <rect width="180" height="180" rx="36" fill="url(#mark)"/>
+    <path d="M40 60V52a10 10 0 0 1 10-10h10M140 60V52a10 10 0 0 0-10-10h-10M40 120v8a10 10 0 0 0 10 10h10M140 120v8a10 10 0 0 1-10 10h-10" stroke="#ffffff" stroke-opacity="0.4" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M126 50c5 22-3 45-20 62-11 11-25 17-37 17 0-14 6-28 17-39 17-17 40-25 40-40z" fill="#ffffff"/>
+    <path d="M126 50c-9 3-18 9-26 17-9 9-15 20-20 31-6 11-9 20-9 26" stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Wordmark FRESHLY -->
+  <text x="320" y="240" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="120" font-weight="900" fill="#ffffff" letter-spacing="-4">
+    FRESHLY<tspan fill="#86efac">.</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="100" y="380" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="44" font-weight="700" fill="#bbf7d0" letter-spacing="-1">
+    Scan Buah &amp; Sayur. Tahu Layaknya. Dalam Sekejap.
+  </text>
+
+  <!-- Description -->
+  <text x="100" y="450" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="28" font-weight="500" fill="#dcfce7" opacity="0.85">
+    <tspan x="100" dy="0">AI deteksi kematangan (matang / belum matang / busuk) dan kelayakan</tspan>
+    <tspan x="100" dy="40">konsumsi buah &amp; sayur dari satu foto.</tspan>
+  </text>
+
+  <!-- Pills -->
+  <g transform="translate(100,560)">
+    <g>
+      <rect width="160" height="44" rx="22" fill="#ffffff" fill-opacity="0.1" stroke="#bbf7d0" stroke-opacity="0.4"/>
+      <text x="80" y="29" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="700" fill="#bbf7d0" letter-spacing="2">MATANG</text>
+    </g>
+    <g transform="translate(180,0)">
+      <rect width="160" height="44" rx="22" fill="#ffffff" fill-opacity="0.1" stroke="#bbf7d0" stroke-opacity="0.4"/>
+      <text x="80" y="29" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="700" fill="#bbf7d0" letter-spacing="2">BELUM MATANG</text>
+    </g>
+    <g transform="translate(360,0)">
+      <rect width="160" height="44" rx="22" fill="#ffffff" fill-opacity="0.1" stroke="#bbf7d0" stroke-opacity="0.4"/>
+      <text x="80" y="29" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="700" fill="#bbf7d0" letter-spacing="2">BUSUK</text>
+    </g>
+    <g transform="translate(540,0)">
+      <rect width="240" height="44" rx="22" fill="#22c55e"/>
+      <text x="120" y="29" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="900" fill="#052e16" letter-spacing="2">KELAYAKAN KONSUMSI</text>
+    </g>
+  </g>
+</svg>

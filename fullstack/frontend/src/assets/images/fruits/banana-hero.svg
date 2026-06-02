@@ -1,0 +1,31 @@
+<svg width="640" height="420" viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustrasi pisang">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbe4c8"/>
+      <stop offset="100%" stop-color="#b6c59b"/>
+    </linearGradient>
+    <linearGradient id="bananaMain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9e36f"/>
+      <stop offset="100%" stop-color="#f3c533"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="420" rx="28" fill="url(#bg)"/>
+
+  <ellipse cx="350" cy="320" rx="180" ry="32" fill="#8b9a72" opacity="0.32"/>
+
+  <path d="M165 260c98 45 233 26 313-49 18-18 31-36 42-58 7-15-12-27-24-15-58 59-142 101-238 99-35 0-66-7-97-21-13-7-26 11-18 21 6 8 14 16 22 23z"
+        fill="url(#bananaMain)" stroke="#cc9f1c" stroke-width="7"/>
+
+  <path d="M206 250c78 31 179 23 250-29 16-11 30-25 44-43" fill="none" stroke="#f6efae" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+
+  <path d="M290 280c76 27 154 12 221-40 18-15 32-30 42-44 8-11 25-5 24 9-2 23-13 47-33 73-76 97-220 132-335 83-19-8-37-20-52-34-10-10-1-28 14-26 40 5 77 2 119-21z"
+        fill="url(#bananaMain)" stroke="#cc9f1c" stroke-width="7"/>
+
+  <path d="M324 291c63 18 133 3 192-42 12-9 23-19 33-30" fill="none" stroke="#f6efae" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+
+  <circle cx="519" cy="145" r="9" fill="#5d4a1f"/>
+  <circle cx="565" cy="178" r="9" fill="#5d4a1f"/>
+  <rect x="146" y="268" width="16" height="10" rx="5" fill="#5d4a1f"/>
+  <rect x="184" y="297" width="16" height="10" rx="5" fill="#5d4a1f"/>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "name": "freshly",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install --include=dev && npm run build"
+  },
+  "dependencies": {
+    "@types/dompurify": "^3.0.5",
+    "dompurify": "^3.4.3",
+    "pdfkit": "^0.18.0"
+  }
+}

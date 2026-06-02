@@ -1,0 +1,309 @@
+
+Running 151 tests using 1 worker
+
+  Γ£ô    1 [prod-setup] ΓÇ║ e2e\prod-auth.setup.ts:27:1 ΓÇ║ authenticate as admin on production (798ms)
+  Γ£ô    2 [prod-public] ΓÇ║ e2e\prod-auth-form.spec.ts:8:3 ΓÇ║ Production - Login Form Interactions ΓÇ║ login form has email and password fields (1.9s)
+  Γ£ô    3 [prod-public] ΓÇ║ e2e\prod-auth-form.spec.ts:13:3 ΓÇ║ Production - Login Form Interactions ΓÇ║ fills email and password fields correctly (1.9s)
+  Γ£ô    4 [prod-public] ΓÇ║ e2e\prod-auth-form.spec.ts:24:3 ΓÇ║ Production - Login Form Interactions ΓÇ║ password visibility toggle works (1.9s)
+  Γ£ô    5 [prod-public] ΓÇ║ e2e\prod-auth-form.spec.ts:38:3 ΓÇ║ Production - Login Form Interactions ΓÇ║ submit with empty fields stays on login page (2.0s)
+  Γ£ô    6 [prod-public] ΓÇ║ e2e\prod-auth-form.spec.ts:46:3 ΓÇ║ Production - Login Form Interactions ΓÇ║ navigate to register page (1.9s)
+  Γ£ô    7 [prod-public] ΓÇ║ e2e\prod-auth-form.spec.ts:52:3 ΓÇ║ Production - Login Form Interactions ΓÇ║ navigate to forgot password page (2.0s)
+  Γ£ô    8 [prod-public] ΓÇ║ e2e\prod-auth-form.spec.ts:64:3 ΓÇ║ Production - Register Form Interactions ΓÇ║ register form has all required fields (1.8s)
+  Γ£ô    9 [prod-public] ΓÇ║ e2e\prod-auth-form.spec.ts:71:3 ΓÇ║ Production - Register Form Interactions ΓÇ║ fills all register fields correctly (2.0s)
+  Γ£ô   10 [prod-public] ΓÇ║ e2e\prod-auth-form.spec.ts:82:3 ΓÇ║ Production - Register Form Interactions ΓÇ║ navigate back to login (2.1s)
+  Γ£ô   11 [prod-public] ΓÇ║ e2e\prod-auth-form.spec.ts:90:3 ΓÇ║ Production - Forgot Password Form ΓÇ║ forgot password form renders and accepts email (2.1s)
+  Γ£ô   12 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:9:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Landing page loads and shows Freshly branding (1.3s)
+  Γ£ô   13 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:15:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Favicon.svg returns 200 (289ms)
+  Γ£ô   14 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:22:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ og-image.svg returns 200 (189ms)
+  Γ£ô   15 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:27:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ robots.txt is served and references freshly.web.id (126ms)
+  Γ£ô   16 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:34:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ sitemap.xml is served with correct domain (134ms)
+  Γ£ô   17 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:42:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ SEO meta tags present on landing (689ms)
+  Γ£ô   18 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:59:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ No em-dash in visible page title (640ms)
+  Γ£ô   19 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:65:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Indonesian ripeness terms visible on landing (3.6s)
+  Γ£ô   20 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:74:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Hero CTA links exist and correct href (2.9s)
+  Γ£ô   21 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:86:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Ensiklopedia page loads on production (959ms)
+  Γ£ô   22 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:92:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Login page renders and is noindex (1.2s)
+  Γ£ô   23 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:100:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Register page renders (1.2s)
+  Γ£ô   24 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:105:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ 404 page does not show blank white screen (1.4s)
+  Γ£ô   25 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:111:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Mobile - hero visible on 375px (1.1s)
+  Γ£ô   26 [prod-public] ΓÇ║ e2e\prod-smoke.spec.ts:120:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ JSON-LD structured data is valid (699ms)
+  Γ£ô   27 [prod-public] ΓÇ║ e2e\public-pages.spec.ts:4:3 ΓÇ║ Public Pages ΓÇ║ Landing page loads with navigation and content (1.2s)
+  Γ£ô   28 [prod-public] ΓÇ║ e2e\public-pages.spec.ts:11:3 ΓÇ║ Public Pages ΓÇ║ Landing page has CTA / login link (1.7s)
+  Γ£ô   29 [prod-public] ΓÇ║ e2e\public-pages.spec.ts:18:3 ΓÇ║ Public Pages ΓÇ║ Landing page footer has copyright (1.3s)
+  Γ£ô   30 [prod-public] ΓÇ║ e2e\public-pages.spec.ts:23:3 ΓÇ║ Public Pages ΓÇ║ Landing page mentions buah and sayur (3.0s)
+  Γ£ô   31 [prod-public] ΓÇ║ e2e\public-pages.spec.ts:31:3 ΓÇ║ Public Pages ΓÇ║ Ensiklopedia page loads and has content (970ms)
+  Γ£ô   32 [prod-public] ΓÇ║ e2e\public-pages.spec.ts:37:3 ΓÇ║ Public Pages ΓÇ║ Verify Email page loads with no token (shows error/loading state) (886ms)
+  Γ£ô   33 [prod-public] ΓÇ║ e2e\public-pages.spec.ts:43:3 ΓÇ║ Public Pages ΓÇ║ Unknown route redirects to home (934ms)
+  Γ£ô   34 [prod-public] ΓÇ║ e2e\public-pages.spec.ts:48:3 ΓÇ║ Public Pages ΓÇ║ No console errors on landing page (2.8s)
+  Γ£ô   35 [prod-public] ΓÇ║ e2e\public-pages.spec.ts:70:3 ΓÇ║ Public Pages ΓÇ║ No broken images on landing page (2.8s)
+  Γ£ô   36 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:7:3 ΓÇ║ SEO - meta tags & canonical ΓÇ║ Landing page has brand title and full meta set (642ms)
+  Γ£ô   37 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:28:3 ΓÇ║ SEO - meta tags & canonical ΓÇ║ Indonesian ripeness terms present in landing copy (2.8s)
+  Γ£ô   38 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:36:3 ΓÇ║ SEO - meta tags & canonical ΓÇ║ Ensiklopedia page sets its own SEO title (936ms)
+  Γ£ô   39 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:43:3 ΓÇ║ SEO - meta tags & canonical ΓÇ║ Login page is noindex (1.9s)
+  Γ£ô   40 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:52:3 ΓÇ║ SEO - meta tags & canonical ΓÇ║ Register page is noindex (1.9s)
+  Γ£ô   41 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:60:3 ΓÇ║ SEO - meta tags & canonical ΓÇ║ robots.txt is served (165ms)
+  Γ£ô   42 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:68:3 ΓÇ║ SEO - meta tags & canonical ΓÇ║ sitemap.xml is served (135ms)
+  Γ£ô   43 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:75:3 ΓÇ║ SEO - meta tags & canonical ΓÇ║ favicon.svg is served (199ms)
+  Γ£ô   44 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:81:3 ΓÇ║ SEO - meta tags & canonical ΓÇ║ og-image.svg is served (131ms)
+  Γ£ô   45 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:86:3 ΓÇ║ SEO - meta tags & canonical ΓÇ║ Logo mark renders on landing navbar (1.1s)
+  Γ£ô   46 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:92:3 ΓÇ║ SEO - meta tags & canonical ΓÇ║ Landing footer shows unified tagline (1.1s)
+  Γ£ô   47 [prod-public] ΓÇ║ e2e\seo-branding.spec.ts:99:3 ΓÇ║ JSON-LD structured data ΓÇ║ WebApplication schema is present and well-formed (620ms)
+  Γ£ô   48 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:9:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Landing page loads and shows Freshly branding (1.4s)
+  Γ£ô   49 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:15:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Favicon.svg returns 200 (320ms)
+  Γ£ô   50 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:22:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ og-image.svg returns 200 (217ms)
+  Γ£ô   51 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:27:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ robots.txt is served and references freshly.web.id (155ms)
+  Γ£ô   52 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:34:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ sitemap.xml is served with correct domain (153ms)
+  Γ£ô   53 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:42:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ SEO meta tags present on landing (1.5s)
+  Γ£ô   54 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:59:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ No em-dash in visible page title (684ms)
+  Γ£ô   55 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:65:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Indonesian ripeness terms visible on landing (3.1s)
+  Γ£ô   56 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:74:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Hero CTA links exist and correct href (3.0s)
+  Γ£ô   57 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:86:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Ensiklopedia page loads on production (1.1s)
+  Γ£ô   58 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:92:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Login page renders and is noindex (1.2s)
+  Γ£ô   59 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:100:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Register page renders (1.2s)
+  Γ£ô   60 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:105:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ 404 page does not show blank white screen (1.2s)
+  Γ£ô   61 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:111:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ Mobile - hero visible on 375px (1.4s)
+  Γ£ô   62 [prod-mobile] ΓÇ║ e2e\prod-smoke.spec.ts:120:3 ΓÇ║ Production smoke - freshly.web.id ΓÇ║ JSON-LD structured data is valid (1.4s)
+  Γ£ô   63 [prod-authenticated] ΓÇ║ e2e\prod-admin-articles-crud.spec.ts:4:3 ΓÇ║ Production - Articles CRUD Interactions ΓÇ║ create article modal opens with form (3.1s)
+  Γ£ô   64 [prod-authenticated] ΓÇ║ e2e\prod-admin-articles-crud.spec.ts:31:3 ΓÇ║ Production - Articles CRUD Interactions ΓÇ║ search filters articles (2.9s)
+  Γ£ô   65 [prod-authenticated] ΓÇ║ e2e\prod-admin-articles-crud.spec.ts:39:3 ΓÇ║ Production - Articles CRUD Interactions ΓÇ║ edit article modal opens with pre-filled title (2.2s)
+  Γ£ô   66 [prod-authenticated] ΓÇ║ e2e\prod-admin-articles-crud.spec.ts:56:3 ΓÇ║ Production - Articles CRUD Interactions ΓÇ║ delete article shows confirmation dialog (2.3s)
+  Γ£ô   67 [prod-authenticated] ΓÇ║ e2e\prod-admin-articles-crud.spec.ts:72:3 ΓÇ║ Production - Articles CRUD Interactions ΓÇ║ articles list API loads on page visit (729ms)
+  Γ£ô   68 [prod-authenticated] ΓÇ║ e2e\prod-admin-chat.spec.ts:4:3 ΓÇ║ Production - Chat Conversations ΓÇ║ conversations page renders (2.3s)
+  Γ£ô   69 [prod-authenticated] ΓÇ║ e2e\prod-admin-chat.spec.ts:9:3 ΓÇ║ Production - Chat Conversations ΓÇ║ chat input is available (2.5s)
+  Γ£ÿ   70 [prod-authenticated] ΓÇ║ e2e\prod-admin-chat.spec.ts:22:3 ΓÇ║ Production - Chat Conversations ΓÇ║ sends a message and receives AI response (8.5s)
+  Γ£ÿ   71 [prod-authenticated] ΓÇ║ e2e\prod-admin-chat.spec.ts:22:3 ΓÇ║ Production - Chat Conversations ΓÇ║ sends a message and receives AI response (retry #1) (6.7s)
+  Γ£ô   72 [prod-authenticated] ΓÇ║ e2e\prod-admin-chat.spec.ts:55:3 ΓÇ║ Production - Chat Conversations ΓÇ║ conversation search filters list (2.4s)
+  Γ£ô   73 [prod-authenticated] ΓÇ║ e2e\prod-admin-chat.spec.ts:65:3 ΓÇ║ Production - Chat Conversations ΓÇ║ conversation rename flow (2.3s)
+  Γ£ô   74 [prod-authenticated] ΓÇ║ e2e\prod-admin-chat.spec.ts:81:3 ΓÇ║ Production - Chat Conversations ΓÇ║ conversation delete shows confirmation (2.5s)
+  Γ£ô   75 [prod-authenticated] ΓÇ║ e2e\prod-admin-dashboard.spec.ts:4:3 ΓÇ║ Production - Admin Dashboard ΓÇ║ Dashboard page loads and shows content (2.7s)
+  Γ£ô   76 [prod-authenticated] ΓÇ║ e2e\prod-admin-dashboard.spec.ts:12:3 ΓÇ║ Production - Admin Dashboard ΓÇ║ Dashboard fetches stats from API (3.2s)
+  Γ£ô   77 [prod-authenticated] ΓÇ║ e2e\prod-admin-dashboard.spec.ts:21:3 ΓÇ║ Production - Admin Dashboard ΓÇ║ Dashboard displays stat cards (2.6s)
+  Γ£ô   78 [prod-authenticated] ΓÇ║ e2e\prod-admin-dashboard.spec.ts:36:3 ΓÇ║ Production - Admin Dashboard ΓÇ║ Sidebar is visible on desktop (2.5s)
+  Γ£ô   79 [prod-authenticated] ΓÇ║ e2e\prod-admin-dashboard.spec.ts:43:3 ΓÇ║ Production - Admin Dashboard ΓÇ║ Sidebar shows Freshly branding (2.6s)
+  Γ£ô   80 [prod-authenticated] ΓÇ║ e2e\prod-admin-dashboard.spec.ts:49:3 ΓÇ║ Production - Admin Dashboard ΓÇ║ Sidebar shows Admin Panel label (2.7s)
+  Γ£ô   81 [prod-authenticated] ΓÇ║ e2e\prod-admin-dashboard.spec.ts:55:3 ΓÇ║ Production - Admin Dashboard ΓÇ║ Header is visible with user avatar/menu (2.5s)
+  Γ£ô   82 [prod-authenticated] ΓÇ║ e2e\prod-admin-dashboard.spec.ts:66:3 ΓÇ║ Production - Admin Dashboard ΓÇ║ Dashboard fetches recent audit logs (2.7s)
+  Γ£ô   83 [prod-authenticated] ΓÇ║ e2e\prod-admin-dashboard.spec.ts:77:3 ΓÇ║ Production - Admin Dashboard ΓÇ║ Sidebar navigation to Scans page works (2.6s)
+  Γ£ô   84 [prod-authenticated] ΓÇ║ e2e\prod-admin-dashboard.spec.ts:86:3 ΓÇ║ Production - Admin Dashboard ΓÇ║ Dashboard has no horizontal overflow (2.7s)
+  Γ£ô   85 [prod-authenticated] ΓÇ║ e2e\prod-admin-dashboard.spec.ts:94:3 ΓÇ║ Production - Admin Dashboard ΓÇ║ Dashboard mobile - sidebar collapses (2.5s)
+  Γ£ô   86 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:4:3 ΓÇ║ Production - Users Page Interactions ΓÇ║ users page renders with search (2.8s)
+  Γ£ô   87 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:10:3 ΓÇ║ Production - Users Page Interactions ΓÇ║ users search finds admin (4.5s)
+  Γ£ô   88 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:20:3 ΓÇ║ Production - Users Page Interactions ΓÇ║ add user button opens create modal (2.9s)
+  Γ£ô   89 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:31:3 ΓÇ║ Production - Knowledge Page Interactions ΓÇ║ knowledge page renders and loads data (1.8s)
+  Γ£ô   90 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:40:3 ΓÇ║ Production - Knowledge Page Interactions ΓÇ║ add knowledge button opens form (2.6s)
+  Γ£ô   91 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:52:3 ΓÇ║ Production - Notification Page Interactions ΓÇ║ notification page renders (1.8s)
+  Γ£ô   92 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:57:3 ΓÇ║ Production - Notification Page Interactions ΓÇ║ broadcast button opens form (1.6s)
+  Γ£ô   93 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:66:3 ΓÇ║ Production - Notification Page Interactions ΓÇ║ mark all as read button works (1.5s)
+  Γ£ô   94 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:80:3 ΓÇ║ Production - Audit Logs Page ΓÇ║ audit logs page loads data (662ms)
+  Γ£ô   95 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:91:3 ΓÇ║ Production - Landing Page Interactions ΓÇ║ CTA button navigates to register or login (3.8s)
+  Γ£ô   96 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:100:3 ΓÇ║ Production - Landing Page Interactions ΓÇ║ navbar has navigation links (3.0s)
+  Γ£ô   97 [prod-authenticated] ΓÇ║ e2e\prod-admin-interactions.spec.ts:107:3 ΓÇ║ Production - Landing Page Interactions ΓÇ║ newsletter subscribe form on footer (3.3s)
+  Γ£ô   98 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:11:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Users page loads and shows user table (2.7s)
+  Γ£ô   99 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:23:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Users page has search input (2.8s)
+  Γ£ô  100 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:30:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Scans page loads and fetches data (2.3s)
+  Γ£ô  101 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:41:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Articles page loads with toolbar (2.3s)
+  Γ£ô  102 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:51:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Articles page has "Tambah Artikel" button (2.3s)
+  Γ£ô  103 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:56:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Articles create modal opens and closes (2.9s)
+  Γ£ô  104 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:65:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Articles search filters results (2.8s)
+  Γ£ô  105 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:74:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Knowledge page loads and fetches data (2.3s)
+  Γ£ô  106 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:85:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Conversations page loads and fetches data (2.4s)
+  Γ£ô  107 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:96:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Roles page loads and fetches data (2.6s)
+  Γ£ô  108 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:107:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Notifications page loads (1.6s)
+  Γ£ô  109 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:114:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Newsletter page loads and fetches subscribers (2.1s)
+  Γ£ô  110 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:121:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Testimonials page loads and fetches feedback (2.7s)
+  Γ£ô  111 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:128:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Audit Logs page loads and fetches data (2.7s)
+  Γ£ô  112 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:139:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Settings page loads with form inputs (2.1s)
+  Γ£ô  113 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:148:3 ΓÇ║ Production - Admin Pages Render ΓÇ║ Profile page loads with user info (2.7s)
+  Γ£ô  114 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:156:3 ΓÇ║ Production - Admin Sidebar Navigation ΓÇ║ All sidebar links navigate correctly (14.0s)
+  Γ£ô  115 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:180:3 ΓÇ║ Production - Admin Sidebar Navigation ΓÇ║ Submenu "Master Data" expands and navigates (3.0s)
+  Γ£ô  116 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:200:3 ΓÇ║ Production - Admin Sidebar Navigation ΓÇ║ Submenu "Konten" expands and navigates (3.1s)
+  Γ£ô  117 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:219:3 ΓÇ║ Production - Admin API Integration ΓÇ║ Public stats endpoint responds (1.4s)
+  Γ£ô  118 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:228:3 ΓÇ║ Production - Admin API Integration ΓÇ║ Public articles endpoint responds (749ms)
+  Γ£ô  119 [prod-authenticated] ΓÇ║ e2e\prod-admin-pages.spec.ts:237:3 ΓÇ║ Production - Admin API Integration ΓÇ║ Health endpoint responds (634ms)
+  Γ£ô  120 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:4:3 ΓÇ║ Production - Profile Page Interactions ΓÇ║ profile page renders user info (2.9s)
+  Γ£ô  121 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:9:3 ΓÇ║ Production - Profile Page Interactions ΓÇ║ edit profile button enables form mode (2.8s)
+  Γ£ô  122 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:19:3 ΓÇ║ Production - Profile Page Interactions ΓÇ║ edit profile fills fields and cancel reverts (2.9s)
+  Γ£ô  123 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:32:3 ΓÇ║ Production - Profile Page Interactions ΓÇ║ gender dropdown has correct options (2.9s)
+  Γ£ô  124 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:44:3 ΓÇ║ Production - Profile Page Interactions ΓÇ║ testimonial section is visible (3.1s)
+  Γ£ô  125 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:49:3 ΓÇ║ Production - Profile Page Interactions ΓÇ║ add testimonial button opens form (3.0s)
+  Γ£ô  126 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:61:3 ΓÇ║ Production - Settings Page Interactions ΓÇ║ settings page renders all sections (2.2s)
+  Γ£ô  127 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:69:3 ΓÇ║ Production - Settings Page Interactions ΓÇ║ theme toggle switches mode (2.6s)
+  Γ£ô  128 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:95:3 ΓÇ║ Production - Settings Page Interactions ΓÇ║ language switcher works (2.2s)
+  Γ£ô  129 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:105:3 ΓÇ║ Production - Settings Page Interactions ΓÇ║ change password modal opens with fields (2.6s)
+  Γ£ô  130 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:122:3 ΓÇ║ Production - Settings Page Interactions ΓÇ║ change password validates mismatch (3.5s)
+  Γ£ÿ  131 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:149:3 ΓÇ║ Production - Settings Page Interactions ΓÇ║ delete account dialog opens (8.2s)
+  Γ£ÿ  132 [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:149:3 ΓÇ║ Production - Settings Page Interactions ΓÇ║ delete account dialog opens (retry #1) (8.4s)
+  Γ£ô  133 [prod-authenticated] ΓÇ║ e2e\prod-admin-scan.spec.ts:4:3 ΓÇ║ Production - Scan Page Interactions ΓÇ║ scans page renders with upload panel (2.3s)
+  Γ£ô  134 [prod-authenticated] ΓÇ║ e2e\prod-admin-scan.spec.ts:11:3 ΓÇ║ Production - Scan Page Interactions ΓÇ║ fruit type selector has options (2.3s)
+  Γ£ô  135 [prod-authenticated] ΓÇ║ e2e\prod-admin-scan.spec.ts:21:3 ΓÇ║ Production - Scan Page Interactions ΓÇ║ scan history API loads (671ms)
+  Γ£ô  136 [prod-authenticated] ΓÇ║ e2e\prod-admin-scan.spec.ts:30:3 ΓÇ║ Production - Scan Page Interactions ΓÇ║ scan history search input works (2.7s)
+  Γ£ô  137 [prod-authenticated] ΓÇ║ e2e\prod-admin-scan.spec.ts:40:3 ΓÇ║ Production - Scan Page Interactions ΓÇ║ scan detail modal opens on view button (2.3s)
+  Γ£ô  138 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:4:3 ΓÇ║ Production - Auth Flow (authenticated) ΓÇ║ Authenticated user is redirected away from /login (2.6s)
+  Γ£ô  139 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:12:3 ΓÇ║ Production - Auth Flow (authenticated) ΓÇ║ Authenticated user is redirected away from /register (2.5s)
+  Γ£ô  140 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:19:3 ΓÇ║ Production - Auth Flow (authenticated) ΓÇ║ /dashboard redirects admin to /admin/dashboard (2.5s)
+  Γ£ô  141 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:25:3 ΓÇ║ Production - Auth Flow (authenticated) ΓÇ║ Auth tokens exist in localStorage (672ms)
+  Γ£ô  142 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:37:3 ΓÇ║ Production - Auth Flow (authenticated) ΓÇ║ User object in localStorage has admin role (725ms)
+  Γ£ô  143 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:48:3 ΓÇ║ Production - Auth Flow (authenticated) ΓÇ║ Protected admin routes are accessible (9.0s)
+  Γ£ô  144 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:77:3 ΓÇ║ Production - Auth Pages UI (public, no storageState conflict) ΓÇ║ Login page form elements are complete (1.6s)
+  Γ£ô  145 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:90:3 ΓÇ║ Production - Auth Pages UI (public, no storageState conflict) ΓÇ║ Register page form elements are complete (1.1s)
+  Γ£ô  146 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:102:3 ΓÇ║ Production - Auth Pages UI (public, no storageState conflict) ΓÇ║ Unauthenticated user cannot access /admin/dashboard (2.5s)
+  Γ£ô  147 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:113:3 ΓÇ║ Production - Auth Pages UI (public, no storageState conflict) ΓÇ║ Unauthenticated user cannot access /admin/users (2.5s)
+  Γ£ô  148 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:124:3 ΓÇ║ Production - Auth Pages UI (public, no storageState conflict) ΓÇ║ Login ΓåÆ Forgot Password navigation works (920ms)
+  Γ£ô  149 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:135:3 ΓÇ║ Production - Auth Pages UI (public, no storageState conflict) ΓÇ║ Login ΓåÆ Register navigation works (1.1s)
+  Γ£ô  150 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:148:3 ΓÇ║ Production - Theme & Responsive (authenticated) ΓÇ║ Dark mode toggle works in admin (3.5s)
+  Γ£ô  151 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:172:3 ΓÇ║ Production - Theme & Responsive (authenticated) ΓÇ║ Admin dashboard responsive on tablet (2.5s)
+  Γ£ô  152 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:182:3 ΓÇ║ Production - Theme & Responsive (authenticated) ΓÇ║ Admin dashboard responsive on mobile (2.6s)
+  Γ£ô  153 [prod-authenticated] ΓÇ║ e2e\prod-auth-flow.spec.ts:192:3 ΓÇ║ Production - Theme & Responsive (authenticated) ΓÇ║ No console errors on admin dashboard (5.6s)
+
+
+  1) [prod-authenticated] ΓÇ║ e2e\prod-admin-chat.spec.ts:22:3 ΓÇ║ Production - Chat Conversations ΓÇ║ sends a message and receives AI response 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('text=Halo')
+    Expected: visible
+    Error: strict mode violation: locator('text=Halo') resolved to 6 elements:
+        1) <p class="text-xs font-bold truncate">Halo</p> aka getByRole('button', { name: 'Halo' }).first()
+        2) <p class="text-xs font-bold truncate">Halo</p> aka getByRole('button', { name: 'Halo' }).nth(1)
+        3) <p class="text-xs font-bold truncate">Halo</p> aka getByRole('button', { name: 'Halo' }).nth(2)
+        4) <p class="text-xs font-bold truncate">Halo</p> aka getByRole('button', { name: 'Halo' }).nth(3)
+        5) <p class="text-xs font-bold truncate">Halo</p> aka getByRole('button', { name: 'Halo' }).nth(4)
+        6) <p class="text-sm leading-relaxed whitespace-pre-wrap break-words">Halo</p> aka getByText('Halo').nth(5)
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('text=Halo')[22m
+
+
+      50 |
+      51 |     // User message should appear in DOM regardless
+    > 52 |     await expect(page.locator('text=Halo')).toBeVisible({ timeout: 10000 });
+         |                                             ^
+      53 |   });
+      54 |
+      55 |   test('conversation search filters list', async ({ page }) => {
+        at C:\Users\Lenovo\Downloads\PROJET\dbs\capstone\frontend\e2e\prod-admin-chat.spec.ts:52:45
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\prod-admin-chat-Production-96b2d-ge-and-receives-AI-response-prod-authenticated\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\prod-admin-chat-Production-96b2d-ge-and-receives-AI-response-prod-authenticated\error-context.md
+
+    Retry #1 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('text=Halo')
+    Expected: visible
+    Error: strict mode violation: locator('text=Halo') resolved to 7 elements:
+        1) <p class="text-xs font-bold truncate">Halo</p> aka getByRole('button', { name: 'Halo' }).first()
+        2) <p class="text-xs font-bold truncate">Halo</p> aka getByRole('button', { name: 'Halo' }).nth(1)
+        3) <p class="text-xs font-bold truncate">Halo</p> aka getByRole('button', { name: 'Halo' }).nth(2)
+        4) <p class="text-xs font-bold truncate">Halo</p> aka getByRole('button', { name: 'Halo' }).nth(3)
+        5) <p class="text-xs font-bold truncate">Halo</p> aka getByRole('button', { name: 'Halo' }).nth(4)
+        6) <p class="text-xs font-bold truncate">Halo</p> aka getByRole('button', { name: 'Halo' }).nth(5)
+        7) <p class="text-sm leading-relaxed whitespace-pre-wrap break-words">Halo</p> aka locator('.text-sm.leading-relaxed').first()
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('text=Halo')[22m
+
+
+      50 |
+      51 |     // User message should appear in DOM regardless
+    > 52 |     await expect(page.locator('text=Halo')).toBeVisible({ timeout: 10000 });
+         |                                             ^
+      53 |   });
+      54 |
+      55 |   test('conversation search filters list', async ({ page }) => {
+        at C:\Users\Lenovo\Downloads\PROJET\dbs\capstone\frontend\e2e\prod-admin-chat.spec.ts:52:45
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\prod-admin-chat-Production-96b2d-ge-and-receives-AI-response-prod-authenticated-retry1\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\prod-admin-chat-Production-96b2d-ge-and-receives-AI-response-prod-authenticated-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\prod-admin-chat-Production-96b2d-ge-and-receives-AI-response-prod-authenticated-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\prod-admin-chat-Production-96b2d-ge-and-receives-AI-response-prod-authenticated-retry1\trace.zip
+
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+  2) [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:149:3 ΓÇ║ Production - Settings Page Interactions ΓÇ║ delete account dialog opens 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  getByRole('textbox', { name: /password|delete/i }).or(locator('input[placeholder*="password"], input[placeholder*="Password"]')).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for getByRole('textbox', { name: /password|delete/i }).or(locator('input[placeholder*="password"], input[placeholder*="Password"]')).first()[22m
+    [2m    14 ├ù locator resolved to <input value="" required="" type="password" autocomplete="current-password" placeholder="Enter your current password" class="appearance-none block px-4 py-2.5 pr-11 border rounded-xl shadow-sm bg-app-surface text-app-text-primary placeholder:text-app-text-secondary/30 placeholder:font-bold placeholder:text-xs focus:outline-none focus:ring-4 sm:text-sm font-bold transition-all duration-200 w-full border-app-border focus:ring-primary-500/10 focus:border-primary-500 "/>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      158 |       page.locator('input[placeholder*="password"], input[placeholder*="Password"]')
+      159 |     );
+    > 160 |     await expect(pwInput.first()).toBeVisible({ timeout: 5000 });
+          |                                   ^
+      161 |
+      162 |     const cancelBtn = page.getByRole('button', { name: /batal|cancel/i });
+      163 |     if (await cancelBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
+        at C:\Users\Lenovo\Downloads\PROJET\dbs\capstone\frontend\e2e\prod-admin-profile.spec.ts:160:35
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\prod-admin-profile-Product-aafd8-delete-account-dialog-opens-prod-authenticated\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\prod-admin-profile-Product-aafd8-delete-account-dialog-opens-prod-authenticated\error-context.md
+
+    Retry #1 ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  getByRole('textbox', { name: /password|delete/i }).or(locator('input[placeholder*="password"], input[placeholder*="Password"]')).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for getByRole('textbox', { name: /password|delete/i }).or(locator('input[placeholder*="password"], input[placeholder*="Password"]')).first()[22m
+    [2m    14 ├ù locator resolved to <input value="" required="" type="password" autocomplete="current-password" placeholder="Enter your current password" class="appearance-none block px-4 py-2.5 pr-11 border rounded-xl shadow-sm bg-app-surface text-app-text-primary placeholder:text-app-text-secondary/30 placeholder:font-bold placeholder:text-xs focus:outline-none focus:ring-4 sm:text-sm font-bold transition-all duration-200 w-full border-app-border focus:ring-primary-500/10 focus:border-primary-500 "/>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      158 |       page.locator('input[placeholder*="password"], input[placeholder*="Password"]')
+      159 |     );
+    > 160 |     await expect(pwInput.first()).toBeVisible({ timeout: 5000 });
+          |                                   ^
+      161 |
+      162 |     const cancelBtn = page.getByRole('button', { name: /batal|cancel/i });
+      163 |     if (await cancelBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
+        at C:\Users\Lenovo\Downloads\PROJET\dbs\capstone\frontend\e2e\prod-admin-profile.spec.ts:160:35
+
+    attachment #1: screenshot (image/png) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\prod-admin-profile-Product-aafd8-delete-account-dialog-opens-prod-authenticated-retry1\test-failed-1.png
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\prod-admin-profile-Product-aafd8-delete-account-dialog-opens-prod-authenticated-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\prod-admin-profile-Product-aafd8-delete-account-dialog-opens-prod-authenticated-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\prod-admin-profile-Product-aafd8-delete-account-dialog-opens-prod-authenticated-retry1\trace.zip
+
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+  2 failed
+    [prod-authenticated] ΓÇ║ e2e\prod-admin-chat.spec.ts:22:3 ΓÇ║ Production - Chat Conversations ΓÇ║ sends a message and receives AI response 
+    [prod-authenticated] ΓÇ║ e2e\prod-admin-profile.spec.ts:149:3 ΓÇ║ Production - Settings Page Interactions ΓÇ║ delete account dialog opens 
+  149 passed (5.9m)

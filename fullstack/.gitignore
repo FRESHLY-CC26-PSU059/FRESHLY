@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Firebase credentials
+*firebase*.json
+!firebase.example.json
+
+# Uploads (user-generated content)
+uploads/
+
+# Coverage & Testing
+coverage/
+
+# Memory Bank
+memory-bank/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+nul
+
+# Package manager
+package-lock.json
+
+.vercel
+.env*.local
