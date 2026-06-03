@@ -49,9 +49,8 @@ test.describe('Production - Chat Conversations', () => {
     }
 
     // User message should appear in the chat area (not sidebar conversation list)
-    // Target the message bubble container specifically
-    const chatArea = page.locator('main, [class*="chat"], [class*="message"]').filter({ hasText: 'Halo' }).first();
-    await expect(chatArea).toBeVisible({ timeout: 10000 });
+    const chatBubble = page.locator('.bg-primary-500', { hasText: 'Halo' }).first();
+    await expect(chatBubble).toBeVisible({ timeout: 10000 });
   });
 
   test('conversation search filters list', async ({ page }) => {

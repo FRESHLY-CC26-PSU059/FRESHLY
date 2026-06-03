@@ -153,11 +153,10 @@ test.describe('Production - Settings Page Interactions', () => {
     await page.getByRole('button', { name: /hapus akun|delete.*account/i }).click();
     await page.waitForTimeout(1500);
 
-    // Delete dialog input has unique placeholder containing "delete"
-    const pwInput = page.locator('input[placeholder*="delete"], input[placeholder*="hapus"]').or(
-      page.getByPlaceholder(/delete|hapus/i)
-    );
-    await expect(pwInput.first()).toBeVisible({ timeout: 8000 });
+    // Locate the password input inside the visible delete account dialog
+    const deleteDialog = page.locator('[role="dialog"]').filter({ hasText: /hapus|delete/i });
+    const pwInput = deleteDialog.locator('input[type="password"]');
+    await expect(pwInput).toBeVisible({ timeout: 8000 });
 
     const cancelBtn = page.getByRole('button', { name: /batal|cancel/i });
     if (await cancelBtn.isVisible({ timeout: 2000 }).catch(() => false)) {

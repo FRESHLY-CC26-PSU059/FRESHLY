@@ -1,7 +1,26 @@
 <div align="center">
   <h1>🧠 FRESHLY Universal API & Machine Learning Module</h1>
   <p>
-    <b>Dokumentasi Arsitektur AI, Custom CNN, Spatial Attention, dan REST API Backend</b>
+    <b>Arsitektur Model AI Kustom, Spatial Attention Layer, Pipeline Pelatihan, dan REST API Inferensi.</b>
+  </p>
+
+  <p align="center">
+    <a href="https://freshlyteam-freshly-api.hf.space/docs" target="_blank">
+      <img src="https://img.shields.io/badge/🚀_LIVE_SWAGGER_DOCS-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="Swagger Docs" />
+    </a>
+    <a href="https://www.kaggle.com/datasets/tirtasurya/freshly-dataset" target="_blank">
+      <img src="https://img.shields.io/badge/📊_Dataset_Kaggle-Freshly-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Dataset Kaggle" />
+    </a>
+    <img src="https://img.shields.io/badge/Python_3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
+  </p>
+
+  <p align="center">
+    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+    <img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white" alt="Keras" />
+    <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+    <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
+    <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+    <img src="https://img.shields.io/badge/Uvicorn-4990e2?style=flat-square&logo=python&logoColor=white" alt="Uvicorn" />
   </p>
 </div>
 
@@ -9,58 +28,80 @@
 
 ## 📖 Deskripsi Singkat Proyek
 
-Selamat datang di repositori modul AI resmi **FRESHLY API**! 
+Selamat datang di repositori resmi **FRESHLY Machine Learning & API**! 
 
-API ini dibangun menggunakan **FastAPI** dan ditenagai oleh model Deep Learning kustom (arsitektur *CNN dengan Spatial Attention*) yang dilatih dari nol (*Training from Scratch*). Modul ini berfungsi sebagai otak utama aplikasi FRESHLY untuk mengklasifikasikan jenis buah/sayur beserta tingkat kematangannya guna mengurangi *food waste*.
+Modul AI ini dirancang khusus untuk menjadi otak utama platform FRESHLY dalam mengklasifikasikan jenis buah/sayur beserta tingkat kematangannya (*Ripe*, *Unripe*, *Rotten*) secara instan. API inferensi dibangun menggunakan **FastAPI** yang ringan dan berkinerja tinggi, sedangkan model Deep Learning dilatih menggunakan arsitektur kustom *Convolutional Neural Network (CNN) dengan Spatial Attention Layer* dari nol (*Training from Scratch*).
 
-### 🧠 Spesifikasi Arsitektur Model & Bukti Evaluasi
-Berbeda dengan API pada umumnya yang menggunakan *Pre-trained Model* (Transfer Learning), model AI FRESHLY dibangun 100% dari awal. Keunggulan utama model kami terletak pada penggunaan **Spatial Attention Layer** buatan sendiri. 
+---
 
-Fitur ini memungkinkan "mata" AI kami untuk berfokus pada titik-titik krusial pada gambar (seperti bercak hitam pembusukan atau transisi warna mentah ke matang), mengabaikan *background* yang tidak penting, dan menghasilkan akurasi prediksi yang sangat tinggi. 
+## 🧠 Spesifikasi Arsitektur Model & Bukti Evaluasi
 
-Sebagai bukti berfungsinya *Spatial Attention* kami, perhatikan hasil visualisasi **Grad-CAM** pada komoditas jeruk di bawah ini:
+Berbeda dengan sistem klasifikasi pada umumnya yang mengandalkan transfer learning (model pre-trained), model AI FRESHLY dibangun 100% dari nol. Keunggulan utama model kami terletak pada integrasi **Spatial Attention Layer** kustom.
+
+> [!NOTE]
+> **Spatial Attention Layer** membantu model untuk fokus pada area krusial dari buah/sayur (seperti bercak hitam pembusukan atau perubahan warna kulit buah) dan mengabaikan informasi latar belakang gambar yang tidak relevan.
+
+Sebagai bukti visual berfungsinya *Spatial Attention* kami, perhatikan visualisasi **Grad-CAM** pada contoh buah jeruk busuk berikut:
 
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1m1lqghTR1MMhT64YzHpqt-92MLgot-9y" alt="Grad-CAM Orange Rotten" width="70%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+  <img src="https://drive.google.com/uc?export=view&id=1m1lqghTR1MMhT64YzHpqt-92MLgot-9y" alt="Grad-CAM Orange Rotten" width="70%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
   <br>
-  <i>Fokus model (warna merah pekat) tepat berada di area pembusukan jeruk dengan tingkat kepercayaan (confidence) 99.99%, membuktikan bahwa model tidak terdistraksi oleh latar belakang.</i>
+  <i>Warna merah pekat menunjukkan konsentrasi perhatian model tertuju tepat pada area pembusukan buah jeruk dengan tingkat kepercayaan (confidence score) sebesar 99.99%.</i>
 </p>
 
-## 🛠️ Tech Stack & Teknologi
-* **Framework Backend:** FastAPI, Uvicorn
-* **Machine Learning:** TensorFlow, Keras
-* **Arsitektur Utama:** Custom CNN Cascade System
-* **Deployment:** Docker, Hugging Face Spaces
+---
+
+## 🗂️ Struktur Direktori Modul
+
+```
+ai/
+├── 📓 Inference.ipynb             # Notebook untuk pengujian inferensi model secara lokal
+├── 📓 logs.ipynb                  # Notebook untuk analisis log pelatihan model
+├── 🚀 freshly_api/                # Kode sumber FastAPI Server
+│   ├── main.py                    # Entry point aplikasi FastAPI
+│   ├── requirements.txt           # Dependensi library API server
+│   ├── Dockerfile                 # Konfigurasi containerization Docker
+│   └── *_saved_model/             # Ekspor direktori model TensorFlow SavedModel (6 model)
+│
+├── 📂 freshly_model/              # Notebook proses pelatihan (Training Notebooks)
+│   ├── banana_model.ipynb         # Eksperimen model pisang
+│   ├── mango_model.ipynb          # Eksperimen model mangga
+│   ├── tomato_model.ipynb         # Eksperimen model tomat
+│   └── ...                        # Eksperimen model lainnya (6 jenis komoditas)
+│
+├── 📦 model_h5/                   # Penyimpanan file model berformat Keras (.h5)
+└── 📦 saved_model/                # Backup folder TensorFlow SavedModel global
+```
 
 ---
 
-## 🔗 Tautan Model ML (Jika Ada)
+## 🚀 Dokumentasi API & Endpoint Reference
 
-Bagi tim Frontend atau penguji yang ingin langsung mencoba mengunggah gambar ke AI tanpa perlu menulis kode, silakan akses halaman Swagger UI kami di bawah ini:
-
-👉 **[Buka Halaman Uji Coba API Interaktif (/docs)](https://freshlyteam-freshly-api.hf.space/docs)**
-
-* **Base URL API (Hugging Face Spaces):** [https://freshlyteam-freshly-api.hf.space](https://freshlyteam-freshly-api.hf.space)
-* **Tautan Dataset Utama (Kaggle):** [https://www.kaggle.com/datasets/tirtasurya/freshly-dataset](https://www.kaggle.com/datasets/tirtasurya/freshly-dataset)
-
----
-
-## 🚀 Daftar Endpoint
+### Base URL Layanan
+* **Hugging Face Spaces (Live Direct):** `https://freshlyteam-freshly-api.hf.space`
+* **Swagger UI (Interactive):** `https://freshlyteam-freshly-api.hf.space/docs`
 
 ### 1. Health Check
-Endpoint ini digunakan untuk memastikan server dalam keadaan aktif (cocok dihubungkan dengan *UptimeRobot* untuk mencegah *cold start*).
+Memastikan status server inferensi aktif dan berjalan normal.
 * **URL:** `/health`
 * **Method:** `GET`
-* **Response:** JSON berisi status server.
+* **Response Contoh (200 OK):**
+  ```json
+  {
+    "status": "healthy",
+    "message": "FRESHLY API Server is running normally"
+  }
+  ```
 
-### 2. Predict Freshness (Main AI)
-Endpoint utama untuk mendeteksi tingkat kematangan buah/sayur. Untuk menjaga akurasi tertinggi, API ini membutuhkan jenis buah yang dipilih oleh pengguna sebagai parameter.
+### 2. Predict Freshness (Main Inference API)
+Mengirimkan gambar buah/sayur beserta jenisnya untuk diprediksi tingkat kesegarannya.
 * **URL:** `/predict`
 * **Method:** `POST`
-* **Body:** `multipart/form-data` 
-  * `fruit_type` (String): Tulis salah satu dari kelas yang didukung (contoh: banana, mango, chili).
-  * `file` (File): File gambar buah/sayur.
-* **Response Contoh:**
+* **Content-Type:** `multipart/form-data`
+* **Request Body:**
+  * `fruit_type` (String, required): Kelas buah yang diuji (lihat daftar di bawah).
+  * `file` (File, required): File citra buah/sayur (format JPG, PNG, atau WebP).
+* **Response Contoh (201 Created / 200 OK):**
   ```json
   {
     "status": "success",
@@ -70,96 +111,98 @@ Endpoint utama untuk mendeteksi tingkat kematangan buah/sayur. Untuk menjaga aku
       "condition_confidence": 98.5
     }
   }
----
-
-## 🍎 Parameter `fruit_type` yang Valid
-
-Sangat penting bagi tim Frontend atau Penguji untuk mengirimkan **`fruit_type`** dengan ejaan huruf kecil yang tepat. **Saat ini, model kami mendukung 6 kelas berikut:**
-
-* **`banana` (Pisang)**
-* **`mango` (Mangga)**
-* **`orange` (Jeruk)**
-* **`chili` (Cabai)**
-* **`paprika` (Paprika)**
-* **`tomato` (Tomat)**
-
-*Sistem akan mengembalikan error 400 (Bad Request) atau 422 (Validation Error) jika memasukkan jenis buah selain daftar di atas.*
+  ```
 
 ---
 
-## 💻 Panduan Integrasi (Untuk Tim Frontend)
+## 🍎 Daftar Parameter `fruit_type` yang Valid
 
-Berikut adalah contoh implementasi pemanggilan API `/predict` menggunakan **JavaScript (Fetch API)** di sisi *client*:
+Untuk memastikan keakuratan prediksi model, parameter **`fruit_type`** wajib ditulis menggunakan huruf kecil (*lowercase*) sesuai dengan ejaan berikut:
+
+| Parameter | Komoditas | Kelas Klasifikasi Output |
+| :--- | :--- | :--- |
+| **`banana`** | Pisang | `banana_ripe`, `banana_unripe`, `banana_rotten` |
+| **`chili`** | Cabai | `chili_ripe`, `chili_unripe`, `chili_rotten` |
+| **`mango`** | Mangga | `mango_ripe`, `mango_unripe`, `mango_rotten` |
+| **`orange`** | Jeruk | `orange_ripe`, `orange_unripe`, `orange_rotten` |
+| **`paprika`** | Paprika | `paprika_ripe`, `paprika_unripe`, `paprika_rotten` |
+| **`tomato`** | Tomat | `tomato_ripe`, `tomato_unripe`, `tomato_rotten` |
+
+> [!WARNING]
+> Server akan mengembalikan kode status **400 Bad Request** atau **422 Validation Error** jika input `fruit_type` tidak sesuai dengan salah satu nilai pada tabel di atas.
+
+---
+
+## 💻 Panduan Integrasi untuk Tim Frontend
+
+Berikut adalah contoh skrip sederhana menggunakan **Fetch API** di JavaScript untuk memanggil endpoint AI:
 
 ```javascript
-// 1. Ambil elemen dari HTML
+// 1. Ambil file gambar dari form input HTML
 const fileInput = document.getElementById('imageInput');
 const file = fileInput.files[0];
-const selectedFruit = "banana"; // Sesuai pilihan user di UI (dropdown/icon)
+const selectedFruit = "banana"; // drop-down pilihan user di aplikasi
 
-// 2. Siapkan form data
+// 2. Siapkan data form multipart
 const formData = new FormData();
-formData.append("fruit_type", selectedFruit); // Wajib dikirimkan!
+formData.append("fruit_type", selectedFruit);
 formData.append("file", file);
 
-// 3. Panggil API Freshly
-fetch("[https://freshlyteam-freshly-api.hf.space/predict](https://freshlyteam-freshly-api.hf.space/predict)", {
+// 3. Kirim permintaan POST ke API server
+fetch("https://freshlyteam-freshly-api.hf.space/predict", {
     method: "POST",
     body: formData
 })
-.then(response => response.json())
+.then(response => {
+    if (!response.ok) throw new Error("Gagal mendapatkan prediksi");
+    return response.json();
+})
 .then(result => {
-    console.log("Status:", result.status);
-    console.log("Kondisi Buah:", result.data.condition);
+    console.log("Detected:", result.data.detected_fruit);
+    console.log("Condition:", result.data.condition);
+    console.log("Confidence:", result.data.condition_confidence + "%");
 })
 .catch(error => {
-    console.error("Terjadi kesalahan:", error);
+    console.error("Error:", error);
 });
 ```
-*(Catatan: Ganti URL freshlyteam-freshly-api.hf.space dengan URL Direct Space kalian jika ada perubahan).*
 
 ---
 
-## ⚙️ Petunjuk Setup Environment & Cara Menjalankan Aplikasi
+## ⚙️ Petunjuk Setup Lokal & Replikasi Pelatihan
 
-Untuk mereplikasi proses pelatihan model (*training*) atau menjalankan server inferensi (*API*) secara lokal, ikuti langkah-langkah berikut:
-
-### 1. Persiapan Environment
-Pastikan Anda sudah menginstal **Python 3.10+** dan **Git LFS** (untuk menarik *file* model `.h5` atau `SavedModel` yang berukuran besar).
+### 1. Persiapan Lingkungan Virtual
+Instal **Git LFS** (Large File Storage) sebelum melakukan clone repositori agar berkas model berformat `.h5` terunduh secara penuh.
 
 ```bash
-# 1. Clone repository
-git clone [https://github.com/FRESHLY-CC26-PSU059/FRESHLY.git](https://github.com/FRESHLY-CC26-PSU059/FRESHLY.git)
+# 1. Clone repositori & pindah ke direktori API
+git clone https://github.com/FRESHLY-CC26-PSU059/FRESHLY.git
 cd FRESHLY/ai/freshly_api
 
-# 2. Buat Virtual Environment (Opsional tapi disarankan)
-python -m venv venv
-source venv/bin/activate  # Untuk Windows: venv\Scripts\activate
+# 2. Buat & aktifkan virtual environment
+python -m venv ai-env
+# Windows:
+ai-env\Scripts\activate
+# Mac/Linux:
+source ai-env/bin/activate
 
-# 3. Install library yang dibutuhkan
-pip install --upgrade pip
+# 3. Instal pustaka dependensi
 pip install -r requirements.txt
 ```
 
-### 2. Cara Menjalankan Server API Lokal (Local Development)
-Jika tim Frontend ingin menguji API ini secara offline di komputer masing-masing:
+### 2. Menjalankan Server Inferensi Lokal
+Gunakan **Uvicorn** untuk menyalakan server pengembangan lokal:
 ```bash
-# Pastikan berada di dalam direktori ai/freshly_api
 uvicorn main:app --reload
 ```
-*Server akan berjalan di `http://127.0.0.1:8000`. Akses `http://127.0.0.1:8000/docs` untuk Swagger UI lokal.*
+Layanan API lokal akan berjalan pada alamat **`http://localhost:8000`**. Kunjungi **`http://localhost:8000/docs`** untuk mengakses dokumentasi interaktif Swagger lokal.
 
-### 3. Cara Menjalankan Eksperimen / Pelatihan Model (Jupyter Notebook)
-Jika Anda ingin melihat proses pembuatan arsitektur CNN, augmentasi dataset, atau memunculkan visualisasi Grad-CAM secara mandiri:
+### 3. Membuka Eksperimen Model (Jupyter Notebook)
+Jika ingin melihat proses pembangunan arsitektur CNN, pelatihan epoch, evaluasi metrik kurva loss/accuracy, atau modifikasi visualisasi perhatian model:
 ```bash
-# Pindah ke direktori model training
 cd ../freshly_model
-
-# Jalankan Jupyter Notebook
 jupyter notebook
 ```
-Buka salah satu *file* `.ipynb` melalui antarmuka *browser* Anda dan jalankan *cell* secara berurutan. Pastikan jalur (*path*) dataset di dalam *notebook* sudah disesuaikan dengan direktori lokal Anda.
 
-<br>
-
+---
 **Developed with 🔥💪 by Tim AI FRESHLY - Coding Camp powered by DBS Foundation 2026**
