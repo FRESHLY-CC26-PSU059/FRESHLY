@@ -128,7 +128,7 @@
 > [!NOTE]
 > Freshly dibangun dengan arsitektur **monorepo** yang terintegrasi penuh: **Frontend** (React 19 + Vite + Tailwind v4), **Backend** (Express 5 + PostgreSQL), **Machine Learning API** (FastAPI + TensorFlow), dan **Cloud Infrastructure** (Vercel + Cloudflare R2 + Firebase).
 
-**🌐 Live App**: [freshly.web.id](https://freshly.web.id/) · **📊 Live Dashboard**: [dashboard-freshly-capstone.streamlit.app](https://dashboard-freshly-capstone.streamlit.app/) · **📧 Kontak**: [support@freshly.web.id](mailto:support@freshly.web.id)
+**🌐 Live App**: [freshly.web.id](https://freshly.web.id/) · **📊 Live Dashboard**: [dashboard-freshly-capstone.streamlit.app](https://dashboard-freshly-capstone.streamlit.app/).
 
 ---
 
