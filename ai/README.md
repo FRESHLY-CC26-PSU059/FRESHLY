@@ -21,7 +21,7 @@ Fitur ini memungkinkan "mata" AI kami untuk berfokus pada titik-titik krusial pa
 Sebagai bukti berfungsinya *Spatial Attention* kami, perhatikan hasil visualisasi **Grad-CAM** pada komoditas jeruk di bawah ini:
 
 <p align="center">
-  <img src="../fullstack/frontend/src/assets/images/gradcam_orange.jpg" alt="Grad-CAM Orange Rotten" width="70%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+  <img src="https://drive.google.com/uc?export=view&id=1m1lqghTR1MMhT64YzHpqt-92MLgot-9y" alt="Grad-CAM Orange Rotten" width="70%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
   <br>
   <i>Fokus model (warna merah pekat) tepat berada di area pembusukan jeruk dengan tingkat kepercayaan (confidence) 99.99%, membuktikan bahwa model tidak terdistraksi oleh latar belakang.</i>
 </p>
@@ -70,8 +70,6 @@ Endpoint utama untuk mendeteksi tingkat kematangan buah/sayur. Untuk menjaga aku
       "condition_confidence": 98.5
     }
   }
-```
-
 ---
 
 ## 🍎 Parameter `fruit_type` yang Valid
