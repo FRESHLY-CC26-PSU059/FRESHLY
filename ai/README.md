@@ -55,22 +55,57 @@ Sebagai bukti visual berfungsinya *Spatial Attention* kami, perhatikan visualisa
 
 ```
 ai/
-├── 📓 Inference.ipynb             # Notebook untuk pengujian inferensi model secara lokal
-├── 📓 logs.ipynb                  # Notebook untuk analisis log pelatihan model
-├── 🚀 freshly_api/                # Kode sumber FastAPI Server
+├── 🚀 freshly_api/                # Kode sumber FastAPI Server & model untuk deployment
+│   ├── Dockerfile                 # Konfigurasi containerization Docker
 │   ├── main.py                    # Entry point aplikasi FastAPI
 │   ├── requirements.txt           # Dependensi library API server
-│   ├── Dockerfile                 # Konfigurasi containerization Docker
-│   └── *_saved_model/             # Ekspor direktori model TensorFlow SavedModel (6 model)
+│   ├── banana_saved_model/        # Ekspor model Pisang siap pakai
+│   ├── chili_saved_model/         # Ekspor model Cabai siap pakai
+│   ├── mango_saved_model/         # Ekspor model Mangga siap pakai
+│   ├── orange_saved_model/        # Ekspor model Jeruk siap pakai
+│   ├── paprika_saved_model/       # Ekspor model Paprika siap pakai
+│   └── tomato_saved_model/        # Ekspor model Tomat siap pakai
 │
-├── 📂 freshly_model/              # Notebook proses pelatihan (Training Notebooks)
-│   ├── banana_model.ipynb         # Eksperimen model pisang
-│   ├── mango_model.ipynb          # Eksperimen model mangga
-│   ├── tomato_model.ipynb         # Eksperimen model tomat
-│   └── ...                        # Eksperimen model lainnya (6 jenis komoditas)
+├── 📂 freshly_model/              # Notebook proses pelatihan dari awal (Training Notebooks)
+│   ├── banana_model.ipynb
+│   ├── chili_model.ipynb
+│   ├── mango_model.ipynb
+│   ├── orange_model.ipynb
+│   ├── paprika_model.ipynb
+│   └── tomato_model.ipynb
 │
-├── 📦 model_h5/                   # Penyimpanan file model berformat Keras (.h5)
-└── 📦 saved_model/                # Backup folder TensorFlow SavedModel global
+├── 📊 logs/                       # File log TensorBoard untuk monitoring metrik pelatihan
+│   ├── banana/gradient_tape/...
+│   ├── chili/gradient_tape/...
+│   ├── mango/gradient_tape/...
+│   ├── orange/gradient_tape/...
+│   ├── paprika/gradient_tape/...
+│   └── tomato/gradient_tape/...
+│
+├── 📦 model_h5/                   # Penyimpanan file model berformat Keras (.h5) versi dasar
+│   ├── freshly_model_banana.h5
+│   ├── freshly_model_chili.h5
+│   ├── freshly_model_mango.h5
+│   ├── freshly_model_orange.h5
+│   ├── freshly_model_paprika.h5
+│   └── freshly_model_tomato.h5
+│
+├── 📦 modeltun_h5/                # Penyimpanan model berformat Keras (.h5) hasil fine-tuning
+│   ├── freshly_model_banana_tuning.h5
+│   ├── freshly_model_chili_tuning.h5
+│   ├── freshly_model_mango_tuning.h5
+│   └── freshly_model_tomato_tuning.h5
+│
+├── 📦 saved_model/                # Backup direktori ekspor TensorFlow SavedModel global
+│   ├── banana_saved_model/
+│   ├── chili_saved_model/
+│   ├── mango_saved_model/
+│   ├── orange_saved_model/
+│   ├── paprika_saved_model/
+│   └── tomato_saved_model/
+│
+├── 📓 Inference.ipynb             # Notebook untuk pengujian inferensi & visualisasi Grad-CAM
+└── 📄 README.md                   # Dokumentasi utama modul AI (file ini)
 ```
 
 ---
